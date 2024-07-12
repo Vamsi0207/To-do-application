@@ -27,7 +27,7 @@ session_start();
                     $new_task = $_POST['new_task'];
                     $task=$_POST['task'];
                     echo "$task";
-                    $result = mysqli_query($db, "SELECT * FROM tasks WHERE task='$task'");
+                    $result = mysqli_query($db, "SELECT * FROM tasks WHERE task='$task' and Email_Id='$email'");
                     $row = mysqli_fetch_assoc($result);
                     $id = $row['id'];
                     mysqli_query($db, "UPDATE tasks SET task='$new_task' WHERE id=$id");
