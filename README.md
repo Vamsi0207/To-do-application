@@ -26,6 +26,10 @@ To run this application locally, follow these steps:
 2. **Import the database schema:**
 
    - Import the below create commands into your MySQL database to create the necessary tables.
+      ```php
+     create table tasks(id int(10) AUTO_INCREMENT primary key, task varchar(255));
+    
+     ```
      
 ### Configure the database connection:
 
@@ -50,7 +54,7 @@ To run this application locally, follow these steps:
 
 3. **Access the application:**
 
-   - Open your web browser and navigate to the URL where your application is hosted.
+   - Open your web browser and navigate to the "localhost/<your_folder>/Login.php" where your application is hosted.
 
 ## Usage
 
