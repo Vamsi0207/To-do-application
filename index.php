@@ -66,8 +66,7 @@ session_start();
 
         <tbody>
                 <?php 
-                // select all tasks if page is visited or refreshed
-              //  $tasks = mysqli_query($db, "SELECT * FROM tasks");
+               
 
                 $i = 1; while ($row = mysqli_fetch_array($tasks)) { ?>
                         <tr>
