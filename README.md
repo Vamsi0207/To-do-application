@@ -34,11 +34,9 @@ To run this application locally, follow these steps:
    - Update the following database configuration variables in `*.php` with your MySQL database credentials:
    - Here you can directly use your required credentials.
      ```php
-     define('DB_HOST', 'localhost');
-     define('DB_USERNAME', 'your_username');
-     define('DB_PASSWORD', 'your_password');
-     define('DB_NAME', 'your_database_name');
+     $db = mysqli_connect('localhost','your_username', 'your_password', 'your_database_name');
      ```
+   
 
 ## Running the Application
 
